@@ -1,0 +1,294 @@
+body{
+	/* Toni's Profile*/
+	font: 18px Helvetica;
+	padding:0;
+	margin:0;
+	background-color:#ffffff;
+	color: #000000;
+}
+
+h1{
+	font-size: xx-large;
+}
+
+.redText{
+	color: #B26048;
+}
+
+#projects a{
+	color: #B26048;
+}
+
+#contact a{
+	color: #FFFFFF;
+}
+
+#contact p, #contact h2{
+	color: #FFFFFF;
+}
+
+/************************ Header *****************************/
+header{
+	font: 18px Helvetica;
+	background-color: #182121;
+	margin: 0 0 0 0;
+	position: fixed;
+    top: 0;
+	width: 100%;
+}
+
+header ul{
+	list-style-type: none;
+	display: flex;
+    justify-content: center;
+}
+
+header ul > li{
+	margin: 10px 20px 10px 20px;
+}
+
+header a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+header a:hover{
+	color: #D88F3D;
+}
+
+/************************ Page *****************************/
+.pagecontent{
+	margin: 77px 0 0 0;
+}
+
+/******* 1st Section - About *******/
+section#about{
+	width: 100%;
+}
+
+.about_containter{
+	display: flex;
+    width: inherit;
+    justify-content: space-between;
+    height: 300px;
+}
+
+.about_container_section{
+	width: 50%;
+    height: inherit;
+	display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+#about .name_and_description{
+
+}
+
+#about .image{
+	background-color: #E5C9BB;
+	/* padding: 10px 0 10px 0; */
+}
+
+#about .name_and_description > div{
+	width: 60%;
+}
+
+#about .image img{
+	height: 270px;
+    /*align-self: center;
+    justify-content: center; */
+}
+
+#about .aboutText h1,
+#about .aboutText p{
+	margin: 5px 0 0 0;
+	padding: 0 0 0 0;
+}
+
+/* #about .aboutText p{
+	font-size: medium;
+} */
+
+/******* 2st Section - Projects *******/
+#projects{
+	background-color: #F9F6F2;
+	padding: 30px 0 30px 0px;
+}
+
+.projects_container{
+	height: fit-content;
+	display: grid;
+    justify-items: center;
+}
+
+#projects .single_project{
+	height: 173px;
+    width: 70%;
+	max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    outline: 3px solid black;
+	margin: 20px 0;
+}
+
+.project_image_container,
+#projects .single_project img{
+	height:inherit;
+}
+
+#projects .single_project img{
+	height: 173px;
+    width: 300px;
+}
+
+.project_image_container{
+	outline: 3px solid black;
+}
+
+#projects h1{
+	margin: 0 0 15px 0;
+}
+
+#projects h2{
+	margin: 0;
+	font-size: large;
+}
+
+#projects p{
+	font-size: medium;
+}
+
+#projects .project_desc_container{
+    margin: 10px auto;
+	padding: 0 10px;
+    width: auto;
+}
+
+#projects a:hover{
+	color:#B26048;
+}
+
+/******* 3rd Section - Contact *******/
+#contact{
+	background-color: #B26048;
+	padding: 30px 0 30px 0px;
+}
+
+#contact .contact_photo img{
+	height: 200px;
+}
+
+#contact .contact_container{
+	margin: 0 auto;
+	width: 70%;
+	max-width: 800px;
+	display: flex;
+    justify-content: space-between;
+}
+
+#contact .contact_details{
+	width: 500px;
+}
+
+#contact a:hover{
+	color: #E5C9BB;
+}
+
+/************************ Footer *****************************/
+footer{
+	width: 100%;
+	bottom:0;
+	padding: 1px 0 20px 0;
+	color:white;
+	background-color: #182121;
+	text-align: center;
+}
+
+footer p{
+	margin: 0 0 0 0;
+}
+
+footer #socials{
+	margin: 100px 0 20px 0;
+}
+
+footer #socials a{
+	width: 50px;
+}
+
+footer #socials a img{
+	width: inherit;
+}
+
+
+/********************** Media Queries ************************/
+@media(max-width: 768px){
+	#about .about_containter{
+		display: flex;
+		width: inherit;
+		justify-content: space-between;
+		height: 300px;
+	}
+
+	#about .about_containter{
+		display: grid;
+		width: 100%;
+		height: fit-content;
+		justify-items: center;
+	}
+
+	#about .about_container_section {
+		width: 100%;
+		height: auto;
+		padding: 10px 0 10px 0;
+		display: grid;
+		justify-items: center;
+		align-items: center;
+	}
+
+	#projects .project_image_container img{
+		    height: 100%;
+			width: 100%;
+	}
+
+	#projects .project_image_container{
+		height: 100%;
+		width: fit-content;
+	}
+
+	#projects .single_project{
+		height: auto;
+		width: 70%;
+		display: grid;
+		outline: 3px solid black;
+		margin: 20px 0;
+		justify-items: center;
+		align-content: space-between;
+		min-width: 210px;
+	}
+
+	#projects .project_desc_container{
+		margin: 25px 0 0 0;
+	}
+
+	#contact .contact_container{
+		margin: 0 auto;
+		width: 70%;
+		display: grid;
+		justify-content: center;
+	}
+
+	#contact .contact_details{
+		width: 70%;
+		text-align: center;
+		min-width: 250px;
+	}
+
+	#contact .contact_container > div{
+		margin: 10px auto;	
+	}
+	
+
+
+}
